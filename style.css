@@ -1,0 +1,464 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #cf3e45;
+    color: #fff;
+}
+
+.nav-links a {
+    color: black;
+}
+
+/* LOGO */
+.logo img {
+    margin: 0px 0px 0px 50px;
+    height: 80px; 
+}
+
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 2em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: darkred;
+    border-radius: 5px;
+    transition: 0.5s ease; 
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 100px auto 125px auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+/* Caption text */
+.text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*About Us*/
+#services ul, #about p, h1 {
+    margin: 10px 100px;
+}
+
+
+/*services*/
+.services-ul li {
+    list-style-type: circle;
+    line-height: 40px;
+}
+#services {
+    padding: 100px 0;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.services-info-services {
+    flex-basis: 33%;
+}
+
+.services-info-areas {
+    flex-basis: 33%;
+}
+
+.services-info-trucks {
+    flex-basis: 33%;
+}
+
+
+/* CHECKBOX HACK */
+input[type=checkbox] {
+    display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/*Contact Form*/
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+
+#contact h1 {
+    margin-left: 33%;
+}
+
+#contact p {
+    margin: 10px 100px;
+}
+
+$red: #e74c3c;
+
+*,
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+input, textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    @include border-radius(8px);
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    @include box-shadow(0 1px 1px rgba(black, 0.1));
+    resize: none;
+}
+
+&:focus {
+    @include box-shadow(0 0px 2px rgba($red, 1)!important);
+}
+
+
+#input-submit {
+    color: white;
+    background: $red;
+    cursor: pointer;
+}
+
+&:hover {
+    @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6));
+}
+
+textarea {
+    height: 126px;
+}
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    margin-right: 2%;
+}
+
+
+@media (max-width: 480px) {
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+
+/*---- footer ----*/
+#footer {
+    padding: 50px 0 30px;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #f67c92;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left-col {
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+
+.footer-right-col {
+    flex-basis: 35%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-tittle h4 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.link-tittle small {
+    font-size: 13px;
+    color: #777;
+}
+
+.footer-info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-logo button {
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.copyright-text, .footer-logo {
+    flex-basis: 40%;
+}
+
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #cf3e45;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 14px 0;
+        margin-top: 20px;
+        z-index: 1;
+    }
+
+    .logo img {
+        margin-left: 10px;
+        height: 50px;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: darkred;
+        transition: 0.5s ease;
+    }
+
+    .menu li + li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger:hover {
+        color: black;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+
+    /*About Us*/
+    #services ul, #about p, h1 {
+        margin: 10px 50px;
+    }
+
+    .services-info-services {
+        flex-basis: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .services-info-areas {
+        flex-basis: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .services-info-trucks {
+        flex-basis: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*Contact Form*/
+
+    .contact-info-top {
+        flex-basis: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin: 10px 5px;
+    } 
+
+    /*Footer*/
+
+    .container {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .footer-left-col {
+        flex-basis: 100%;
+    }
+
+    .footer-right-col {
+        flex-basis: 100%;
+    }
+
+
+}
+
+
+

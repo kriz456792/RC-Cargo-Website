@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RC Cargo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <a name="top"></a>
+
+    <header id="home-menu">
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="images\rclogoFINAL.jpg" /> <!-- src="images/rclogoFINAL.jpg"-->
+            </div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVIGATION MENUS -->
+                <div class="menu" id="menu-id">
+                <li id="home-btn"><a href="#top">Home</a></li>
+                <li id="about-btn"><a href="#dots-top">About</a></li>
+                <li id="services-btn"><a href="#services">Services</a></li>
+                <li id="contact-btn"><a href="#contact">Contact</a></li>
+                </div>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="slideshow-container" id="slide-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="images\RC_CARGO-31.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images\RC_CARGO-16.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images\RC_CARGO-8.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images\RC_CARGO-37.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center" id="dots-top">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+
+    <section id="test-separator"></section>
+
+    <section id="about">
+        <h1>About Us</h1>
+        <p>
+            RC CARGO TRANSPORT, LLC is a family-owned and operated transportation
+            company. With 10+ years of experience in the industry. Our drivers are trained to comply with
+            the highest safety standards. Our fleet is insured and registered to comply will all
+            transportation rules and regulations.
+            <br /><br />
+            Our competitive rates are intended to fit all of our customers big and small.
+        </p>
+
+    </section>
+
+    <section id="services">
+
+        <div class="services-info-services">
+            <h1>Services</h1>
+            <ul class="services-ul">
+                <li>(LTL) Less than truck load</li>
+                <li>(FTL) Full truck load</li>
+                <li>Expedited / Hot Shot</li>
+                <li>Ocean freight</li>
+                <li>Air freight</li>
+                <li>Residential</li>
+                <li>Courier delivery</li>
+                <li>Local services</li>
+                <li>Dedicated routes</li>
+                <li>Same/next day services</li>
+            </ul>
+        </div>
+
+        <div class="services-info-areas">
+            <h1>Areas Serviced</h1>
+            <ul class="services-ul">
+                <li>LOS ANGELES COUNTY</li>
+                <li>ORANGE COUNTY</li>
+                <li>RIVERSIDE COUNTY</li>
+                <li>SAN BERNANDINO COUNTY</li>
+                <li>SAN DIEGO COUNTY</li>
+                <li>VENTURA COUNTY</li>
+                <li>BAKERSFIELD COUNTY</li>
+                <li>FRESNO COUNTY</li>
+                <li>KERN COUNTY</li>
+                <li>IMPERIAL COUNTY</li>
+                <li>...AND MANY MORE</li>
+            </ul>
+        </div>
+
+        <div class="services-info-trucks">
+            <h1>Trucks Available</h1>
+            <ul class="services-ul">
+                <li>Sprinter vans</li>
+                <li>Box trucks w/ liftgate & pallet jack</li>
+                <li>Flatbed trucks</li>
+                <li>53ft dry van</li>
+            </ul>
+        </div>
+
+
+    </section>
+
+    <section id="contact">
+        <div class="contact-info-top">
+            <h1>GET A QUOTE: BOOK YOUR LOAD TODAY</h1>
+            <p>
+                FILL OUT THE FORM BELOW AND SOMEONE FROM OUR TEAM WILL REACH OUT TO ASSIT YOU.
+                FOR IMMEDIATE SERVICE, PLEASE CALL US AT 310-720-9729, AND OUR CALL OPERATORS WILL
+                BE READY TO ASSIT YOU.
+            </p>
+        </div>
+        
+        <form class="cf">
+            <div class="half left cf">
+                <input type="text" id="input-name" placeholder="NAME">
+                <input type="text" id="input-company" placeholder="COMPANY NAME">
+                <input type="text" id="input-phone" placeholder="PHONE #">
+                <input type="email" id="input-email" placeholder="EMAIL ADDRESS">
+            </div>
+            <div class="half right cf">
+                <input type="text" id="input-origin-zip" placeholder="ORIGIN ZIP CODE">
+                <input type="text" id="input-destination-zip" placeholder="DESTINATION ZIP CODE">
+                <input type="text" id="input-pallet" placeholder="# PALLETS">
+                <input type="text" id="input-weight" placeholder="CARGO WEIGHT(LBS)">
+                <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="input-submit">
+        </form>
+    </section>
+
+    <section id="footer">
+        <div class="container footer-row">
+            <hr />
+            <div class="footer-left-col">
+                <div class="footer-links">
+                    <div class="link-tittle">
+                        <h4>Contact Info</h4>
+                        <small>email@gmail.com</small><br />
+                        <small>310-720-9729</small>
+                    </div>
+                    <div class="link-tittle">
+                        <h4>Location</h4>
+                        <small>
+                            841 W 132ND ST
+                            GARDENA, CA 90247
+                        </small><br />
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-info">
+                    <div class="copyright-text">
+                        <small>copyright 2022</small>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="images/rclogoFINAL.jpg" alt="image_here" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Script Section -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+
+
+        var homeBtn = document.getElementById("home-btn");
+        var aboutBtn = document.getElementById("about-btn");
+        var servicesBtn = document.getElementById("services-btn");
+        var contactBtn = document.getElementById("contact-btn");
+
+        homeBtn.onclick = aboutBtn.onclick = servicesBtn.onclick = contactBtn.onclick = function () {
+            var checkbox = document.getElementById("checkbox_toggle");
+            checkbox.checked = !checkbox.checked;
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>
+
+<!--
+    TODO: Create a contact form.   
+-->
